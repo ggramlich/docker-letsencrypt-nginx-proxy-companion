@@ -14,9 +14,6 @@ RUN curl -L -O https://github.com/jwilder/docker-gen/releases/download/$DOCKER_G
  && tar -C /usr/local/bin -xvzf docker-gen-linux-armhf-$DOCKER_GEN_VERSION.tar.gz \
  && rm -f docker-gen-linux-armhf-$DOCKER_GEN_VERSION.tar.gz
 
-RUN curl -L -o /usr/bin/docker https://master.dockerproject.org/linux/arm/docker && \
-	chmod +rx /usr/bin/docker
-
 WORKDIR /app
 
 # Install simp_le program
